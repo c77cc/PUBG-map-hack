@@ -8,6 +8,11 @@ void readerLoop(GameDataParser* w_reader)
 {
 	while (1)
 	{
+        if (quited)
+        {
+            break;
+        }
+
 		if (readLoop)
 		{
 			w_reader->readLoop();
@@ -68,5 +73,7 @@ int main()
 		readLine = "";
 	}
 	
+    quited = true;
+    t1.join();
 	return 0;
 }

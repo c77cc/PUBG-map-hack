@@ -12,6 +12,7 @@ using uint16_t = USHORT;
 using int16_t = SHORT;
 
 bool readLoop = false;
+bool quited = false;
 
 // ugly to define the wanted items / player gnames this way.
 std::vector<std::string> playerGNameVec = { "PlayerMale", "PlayerFemale" };
